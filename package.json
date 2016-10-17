@@ -1,0 +1,37 @@
+{
+  "name": "node-project-bootstrap",
+  "version": "1.0.0",
+  "description": "Node bootstrap project",
+  "main": "src/index.js",
+  "bin": {
+    "mocha": "./node_modules/.bin/mocha",
+    "eslint": "./node_modules/.bin/eslint",
+    "nyc": "./node_modules/.bin/nyc",
+    "coveralls": "./node_modules/.bin/coveralls"
+  },
+  "scripts": {
+    "test": "mocha test",
+    "lint": "eslint src",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "keywords": [
+    "node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acostes/node-project-bootstrap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/acostes/node-project-bootstrap/issues"
+  },
+  "homepage": "https://github.com/acostes/node-project-bootstrap#readme",
+  "author": "Arnaud Costes <arnaud.costes@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "coveralls": "^2.11.14",
+    "eslint": "^3.8.0",
+    "mocha": "^3.1.2",
+    "nyc": "^8.3.1",
+    "unit.js": "^2.0.0"
+  }
+}
